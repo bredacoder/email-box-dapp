@@ -1,0 +1,4 @@
+[settings]
+
+[[proxy]]
+path = "src/email_box_proxy.rs"

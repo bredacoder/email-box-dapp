@@ -1,0 +1,21 @@
+# === Rust / Cargo ===
+target/
+Cargo.lock
+
+# === MultiversX build outputs ===
+output/
+wasm/
+*.wasm
+
+# === VS Code / IDEs ===
+.vscode/
+.idea/
+*.swp
+
+# === OS junk ===
+.DS_Store
+Thumbs.db
+
+# === Test / debug artifacts ===
+*.log
+*.tmp
