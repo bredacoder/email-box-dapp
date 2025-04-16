@@ -155,8 +155,6 @@ pub trait EmailBox {
     fn get_inbox(&self, limit: u32, offset: u32) -> ManagedBuffer<Self::Api> {
         // Only allow users to access their own inbox
         let caller = self.blockchain().get_caller();
-        require!(caller == self.blockchain().get_caller(), "Access denied");
-
         let inbox = self.inbox(&caller);
         let total = inbox.len();
 
